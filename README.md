@@ -39,13 +39,15 @@ The application is containerized using Docker and deployed on Render, allowing u
 
 # ✨ Highlights
 
-- 🚖 Predicts NYC Taxi Trip Duration
-- 📊 Trained on **1.45 Million+ Trips**
+- 🚖 Predicts NYC Taxi Trip Duration using Machine Learning
+- 📊 Dataset Size: **1,458,644** original trips
+- 🧹 Cleaned Dataset: **1,450,541** trips after preprocessing
+- 📈 13 engineered features used for training
+- 🤖 Random Forest Regressor
 - ⚡ Achieved **R² Score: 0.7674**
-- 🧹 Complete Data Cleaning Pipeline
-- 📈 Feature Engineering
-- 🤖 Random Forest Regression
-- 🚀 FastAPI REST API
+- 📉 MAE: **191.11 seconds**
+- 📉 RMSE: **318.94 seconds**
+- 🚀 Built with FastAPI
 - 🐳 Dockerized
 - ☁️ Deployed on Render
 
