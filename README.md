@@ -216,12 +216,6 @@ Example Response
 
 ---
 
-## 📊 Feature Importance
-
-![Feature Importance](screenshots/feature-importance.png)
-
----
-
 ## 📈 Model Performance
 
 ![Performance](screenshots/model-performance.png)
