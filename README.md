@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="screenshots/banner.png" width="100%" alt="NYC Taxi Trip Duration Prediction Banner">
-</p>
-
 <h1 align="center">🚖 NYC Taxi Trip Duration Prediction</h1>
 
 <p align="center">
