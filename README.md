@@ -1,151 +1,61 @@
-# 🚖 NYC Taxi Trip Duration Prediction
+## 📸 Project Screenshots
 
-A Machine Learning project that predicts the duration of NYC taxi trips using historical trip data. The project includes data preprocessing, feature engineering, model training, evaluation, and deployment using FastAPI.
+### 📌 Project Structure
 
----
-
-## 📌 Project Overview
-
-The objective of this project is to estimate the trip duration of a taxi ride based on pickup and dropoff locations and trip-related features.
-
-The project follows the complete Machine Learning lifecycle:
-
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Model Training
-- Model Evaluation
-- FastAPI Deployment
+![Project Structure](screenshots/project-structure.png)
 
 ---
 
-## 📊 Dataset
+### 🚀 FastAPI Swagger UI
 
-Dataset: NYC Taxi Trip Duration
+Interactive API documentation generated using FastAPI.
 
-Features used:
-
-- Pickup Longitude
-- Pickup Latitude
-- Dropoff Longitude
-- Dropoff Latitude
-- Pickup Hour
-- Pickup Day
-- Pickup Month
-- Pickup Weekday
-- Distance
-- Peak Hour
-- Weekend Indicator
-- Time of Day
+![Swagger UI](screenshots/swagger-ui.png)
 
 ---
 
-## 🛠 Feature Engineering
+### 🔮 Prediction Response
 
-Implemented:
+Sample prediction returned by the deployed API.
 
-- Pickup Hour
-- Pickup Day
-- Pickup Month
-- Pickup Weekday
-- Weekend Detection
-- Peak Hour Detection
-- Time of Day Classification
-- Haversine Distance Calculation
-- Log Transformation of Target Variable
+![Prediction Response](screenshots/prediction-response.png)
 
 ---
 
-## 🤖 Machine Learning Model
+### 📊 Feature Importance
 
-Algorithm:
+Random Forest feature importance showing the most influential features.
 
-- Random Forest Regressor
-
-Libraries:
-
-- Pandas
-- NumPy
-- Scikit-learn
-- FastAPI
-- Joblib
+![Feature Importance](screenshots/feature-importance.png)
 
 ---
 
-## 📈 Model Performance
+### 📈 Model Performance
 
-| Metric | Value |
-|---------|-------|
-| MAE | 191.11 seconds |
-| RMSE | 318.94 seconds |
-| R² Score | 0.7674 |
+Final evaluation metrics of the trained model.
+
+![Model Performance](screenshots/model-performance.png)
 
 ---
 
-## 🚀 API Deployment
+### 🔥 Correlation Heatmap
 
-FastAPI was used to deploy the trained model.
+Correlation between engineered features.
 
-Available endpoints:
-
-### GET /
-
-Returns API status.
-
-### GET /health
-
-Returns server health.
-
-### POST /predict
-
-Predicts trip duration.
+![Correlation Heatmap](screenshots/correlation-heatmap.png)
 
 ---
 
-## 📂 Project Structure
+### 📉 Trip Duration Distribution
 
-```
-NYC-Taxi-Trip-Duration-Prediction
-│
-├── app.py
-├── requirements.txt
-├── feature_columns.pkl
-├── README.md
-├── .gitignore
-└── new york estimated ml time.ipynb
-```
+Distribution of the target variable after preprocessing.
+
+![Trip Duration Distribution](screenshots/trip-duration-distribution.png)
 
 ---
 
-## 🛠 Tech Stack
+### 🚖 Distance vs Trip Duration
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- FastAPI
-- Joblib
-- Git
-- GitHub
+Relationship between trip distance and trip duration.
 
----
-
-## 🔮 Future Improvements
-
-- Docker Deployment
-- Cloud Deployment (Render)
-- Hyperparameter Tuning
-- XGBoost Model
-- CI/CD Pipeline
-- Model Monitoring
-
----
-
-## 👨‍💻 Author
-
-Aditya Kumar Singh
-
-GitHub:
-https://github.com/Adityasinghrajput01
+![Distance vs Trip Duration](screenshots/distance-vs-trip-duration.png)
