@@ -1,0 +1,7 @@
+train.csv
+test.csv
+taxi_trip_duration_model.pkl
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+venv/
