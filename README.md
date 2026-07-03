@@ -1,23 +1,33 @@
-# 🚖 NYC Taxi Trip Duration Prediction
+<p align="center">
+  <img src="screenshots/banner.png" width="100%" alt="NYC Taxi Trip Duration Prediction Banner">
+</p>
 
-![Python](https://img.shields.io/badge/Python-3.13-blue)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange)
-![FastAPI](https://img.shields.io/badge/FastAPI-API-green)
-![Docker](https://img.shields.io/badge/Docker-Container-blue)
-![Render](https://img.shields.io/badge/Render-Deployed-success)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+<h1 align="center">🚖 NYC Taxi Trip Duration Prediction</h1>
+
+<p align="center">
+Machine Learning • FastAPI • Docker • Render • Scikit-Learn
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Python-3.13-blue">
+<img src="https://img.shields.io/badge/Scikit--Learn-ML-orange">
+<img src="https://img.shields.io/badge/FastAPI-API-green">
+<img src="https://img.shields.io/badge/Docker-Container-blue">
+<img src="https://img.shields.io/badge/Render-Deployed-success">
+<img src="https://img.shields.io/badge/License-MIT-yellow">
+</p>
 
 ---
 
-## 🌐 Live Demo
+# 🌐 Live Demo
 
-### 🚀 Live API
+🚀 **Live API**
 
-**https://nyc-taxi-trip-duration-api.onrender.com/**
+https://nyc-taxi-trip-duration-api.onrender.com/
 
-### 📄 Interactive API Documentation (Swagger)
+📄 **Swagger Documentation**
 
-**https://nyc-taxi-trip-duration-api.onrender.com/docs**
+https://nyc-taxi-trip-duration-api.onrender.com/docs
 
 ---
 
@@ -25,43 +35,61 @@
 
 This project predicts the duration of New York City taxi trips using Machine Learning.
 
-The project covers the complete Machine Learning lifecycle:
+It covers the complete Machine Learning lifecycle, from preprocessing and feature engineering to deployment as a production-ready REST API.
 
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Model Training
-- Model Evaluation
-- Docker Containerization
-- FastAPI Deployment
-- Cloud Deployment on Render
-
-Users can interact with the deployed REST API through Swagger UI and obtain real-time trip duration predictions.
+The application is containerized using Docker and deployed on Render, allowing users to make real-time predictions through FastAPI.
 
 ---
 
-# 🚀 Features
+# ✨ Highlights
 
-- Data Cleaning
-- Outlier Detection & Removal
-- Feature Engineering
-- Haversine Distance Calculation
-- Peak Hour Detection
-- Weekend Detection
-- Time of Day Classification
-- Log Transformation
-- Random Forest Regression
-- REST API using FastAPI
-- Dockerized Application
-- Cloud Deployment on Render
+- 🚖 Predicts NYC Taxi Trip Duration
+- 📊 Trained on **1.45 Million+ Trips**
+- ⚡ Achieved **R² Score: 0.7674**
+- 🧹 Complete Data Cleaning Pipeline
+- 📈 Feature Engineering
+- 🤖 Random Forest Regression
+- 🚀 FastAPI REST API
+- 🐳 Dockerized
+- ☁️ Deployed on Render
+
+---
+
+# 🏗️ Project Architecture
+
+```text
+                NYC Taxi Dataset
+                       │
+                       ▼
+              Data Cleaning
+                       │
+                       ▼
+            Feature Engineering
+                       │
+                       ▼
+          Random Forest Regressor
+                       │
+                       ▼
+               Saved Model (.pkl)
+                       │
+                       ▼
+                  FastAPI API
+                       │
+                       ▼
+                  Docker Image
+                       │
+                       ▼
+               Render Deployment
+                       │
+                       ▼
+              Public REST API
+```
 
 ---
 
 # 📊 Dataset
 
-Dataset:
-
-**NYC Taxi Trip Duration Dataset**
+Dataset: **NYC Taxi Trip Duration**
 
 ### Target Variable
 
@@ -90,19 +118,18 @@ Performed the following preprocessing steps:
 
 - Removed duplicate records
 - Removed missing values
-- Removed invalid trips
-- Removed unrealistic trip durations
-- Removed long-distance outliers
+- Removed unrealistic trips
+- Removed abnormal trip durations
 - Removed extremely slow trips
+- Removed long-distance outliers
 - One-Hot Encoding
-- Feature Scaling (where required)
 - Log Transformation of Target Variable
 
 ---
 
-# ⚙ Feature Engineering
+# ⚙️ Feature Engineering
 
-Engineered Features
+Implemented Features
 
 - Pickup Hour
 - Pickup Day
@@ -110,8 +137,8 @@ Engineered Features
 - Pickup Weekday
 - Weekend Indicator
 - Peak Hour Indicator
-- Time of Day
-- Haversine Distance
+- Time of Day Classification
+- Haversine Distance Calculation
 
 ---
 
@@ -119,15 +146,15 @@ Engineered Features
 
 ### Algorithm
 
-Random Forest Regressor
+- Random Forest Regressor
 
-### Libraries
+### Libraries Used
 
 - Pandas
 - NumPy
-- Scikit-learn
-- Joblib
+- Scikit-Learn
 - FastAPI
+- Joblib
 
 ---
 
@@ -141,9 +168,21 @@ Random Forest Regressor
 
 ---
 
+# 📊 Feature Importance
+
+| Rank | Feature | Importance |
+|------|---------|------------|
+| 1 | Distance | 82.75% |
+| 2 | Pickup Hour | 5.00% |
+| 3 | Dropoff Latitude | 3.98% |
+| 4 | Dropoff Longitude | 1.83% |
+| 5 | Pickup Longitude | 1.70% |
+
+---
+
 # 🚀 REST API
 
-## Home Endpoint
+## Home
 
 ```
 GET /
@@ -159,7 +198,7 @@ Returns
 
 ---
 
-## Prediction Endpoint
+## Prediction
 
 ```
 POST /predict
@@ -204,13 +243,13 @@ Example Response
 
 ---
 
-## 🚀 Swagger Documentation
+## 🚀 Swagger UI
 
-![Swagger UI](screenshots/swagger-ui.png)
+![Swagger](screenshots/swagger-ui.png)
 
 ---
 
-## 🔮 Prediction API
+## 🔮 Prediction Response
 
 ![Prediction](screenshots/prediction-response.png)
 
@@ -236,13 +275,13 @@ Example Response
 
 ## 🚖 Distance vs Trip Duration
 
-![Scatter Plot](screenshots/distance-vs-trip-duration.png)
+![Scatter](screenshots/distance-vs-trip-duration.png)
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 NYC-Taxi-Trip-Duration-Prediction
 │
 ├── app.py
@@ -258,6 +297,7 @@ NYC-Taxi-Trip-Duration-Prediction
 │   └── NYC_Taxi_Trip_Duration_Prediction.ipynb
 │
 └── screenshots/
+    ├── banner.png
     ├── project-structure.png
     ├── swagger-ui.png
     ├── prediction-response.png
@@ -277,7 +317,7 @@ NYC-Taxi-Trip-Duration-Prediction
 - NumPy
 - Matplotlib
 - Seaborn
-- Scikit-learn
+- Scikit-Learn
 - FastAPI
 - Docker
 - Joblib
@@ -295,7 +335,7 @@ Clone the repository
 git clone https://github.com/Adityasinghrajput01/NYC-Taxi-Trip-Duration-Prediction.git
 ```
 
-Move inside the project
+Move into the project
 
 ```bash
 cd NYC-Taxi-Trip-Duration-Prediction
@@ -337,29 +377,46 @@ docker run -p 8000:8000 nyc-taxi-api
 
 ---
 
-# ☁ Deployment
+# ☁️ Deployment
 
 The application is deployed on **Render** using **Docker**.
 
-Live URL:
+🌐 Live URL
 
-**https://nyc-taxi-trip-duration-api.onrender.com**
+https://nyc-taxi-trip-duration-api.onrender.com/
 
-Swagger UI:
+📄 Swagger
 
-**https://nyc-taxi-trip-duration-api.onrender.com/docs**
+https://nyc-taxi-trip-duration-api.onrender.com/docs
+
+---
+
+# 🎯 Skills Demonstrated
+
+- Data Cleaning
+- Exploratory Data Analysis
+- Feature Engineering
+- Outlier Detection
+- Random Forest Regression
+- Model Evaluation
+- FastAPI
+- REST API Development
+- Docker
+- Git
+- GitHub
+- Cloud Deployment
 
 ---
 
 # 🔮 Future Improvements
 
-- XGBoost & LightGBM Models
 - Hyperparameter Tuning
+- XGBoost & LightGBM
 - Model Monitoring
 - CI/CD Pipeline
 - Automated Retraining
 - Frontend Dashboard
-- User Authentication
+- Authentication & Rate Limiting
 
 ---
 
@@ -367,14 +424,20 @@ Swagger UI:
 
 ## Aditya Kumar Singh
 
-**LinkedIn**
-
-https://www.linkedin.com/in/aditya-kumar-singh-173911321/
-
 **GitHub**
 
 https://github.com/Adityasinghrajput01
 
+**LinkedIn**
+
+https://www.linkedin.com/in/aditya-kumar-singh-173911321/
+
 ---
 
-## ⭐ If you found this project useful, please consider giving it a Star!
+<p align="center">
+
+⭐ If you found this project useful, please consider giving it a Star!
+
+Made with ❤️ by <b>Aditya Kumar Singh</b>
+
+</p>
